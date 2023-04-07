@@ -1,0 +1,25 @@
+{% include 'chatgpt_app/partials/main.html' %}
+
+{% load static %}
+
+
+{% block content %}
+<div class="container">
+    <h1 style="text-align: center;">ChatGPT Demo</h1>
+
+    <div class="form-group">
+        <label for="prompt">Prompt:</label>
+        <input class="form-control" id="prompt" name="prompt" placeholder="Enter a prompt" rows="3">
+    </div>
+</div>
+<br><br>
+
+<button class="btn btn-primary" id="generate-text-btn" style="margin: 0px 200px 0px 200px;">Generate text</button>
+
+<div class="mt-4" id="text-container">
+
+</div>
+</div>
+{% endblock content %}
+
+<script src="{% static 'chatgpt_app/js/main.js' %}"></script>
