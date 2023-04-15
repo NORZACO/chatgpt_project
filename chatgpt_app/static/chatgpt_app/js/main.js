@@ -12,6 +12,7 @@ generateTextBtn.addEventListener('click', () => {
             const text = data.text;
             textContainer.innerHTML += text; // append new text to existing content
             textContainer.innerHTML += '<br> <hr>'; // add a space between the two texts
+            textContainer.style.color = 'red;'
             // <br></br>
             promptInput.value = ''; // clear the prompt input field
         })
